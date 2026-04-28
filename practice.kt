@@ -51,26 +51,6 @@ fun is_prime(sayi: Int): Boolean {
     }
     return true
 }
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    guess()
-    finds()
-    val list = listOf(1,2,3,4,5)
-    println(joins_delimiter(list, "-"))
-    println(maksimum(list))
-    println(repeats_string("ha",3u))
-    val liste = arrayOf(1,2,3,4,5)
-    println(prefix(liste))
-    val koleksiyon = listOf(8,5,3,5,8,9)
-    println(sort_asc(koleksiyon))
-    println(sort_dec(koleksiyon))
-    println("Temizlenmiş liste: ${removes(koleksiyon)}")
-    println("aranan sayının indexi: ${finds_index(koleksiyon,9)}")
-    println(right(list,1))
-    val harfler = listOf("a", "b", "c", "d", "e", "f")
-    println(left(harfler,1))
-}
 
 fun <T>joins_delimiter(items: List<T>, delimiter: String): String{
     var result = items[0].toString()
@@ -216,5 +196,22 @@ fun maksimum(items: List<Int>): Int{
     return max
 }
 
-
+fun main() {
+    guess()
+    finds()
+    val list = listOf(1,2,3,4,5)
+    println(joins_delimiter(list, "-"))
+    println(maksimum(list))
+    println(repeats_string("ha",3u))
+    val liste = arrayOf(1,2,3,4,5)
+    println(prefix(liste))
+    val koleksiyon = listOf(8,5,3,5,8,9)
+    println(sort_asc(koleksiyon))
+    println(sort_dec(koleksiyon))
+    println("Temizlenmiş liste: ${removes(koleksiyon)}")
+    println("aranan sayının indexi: ${finds_index(koleksiyon,9)}")
+    println(right(list,1))
+    val harfler = listOf("a", "b", "c", "d", "e", "f")
+    println(left(harfler,1))
+}
 
